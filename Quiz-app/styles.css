@@ -22,6 +22,7 @@ header {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .bookmark {
   position: absolute;
@@ -38,11 +39,18 @@ header {
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  position: sticky;
+  bottom: 0;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.nav-ul {
   list-style: none;
   border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 img {
@@ -51,10 +59,41 @@ img {
 }
 
 .button {
+  width: fit-content;
+  align-self: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .tag {
-  width: auto;
+  width: fit-content;
   height: auto;
   border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: rgb(218, 214, 214);
+  align-self: flex-end;
+}
+
+.text {
+  margin: 20px;
+  text-align: center;
+}
+
+.homepage {
+  position: sticky;
+}
+
+.bookmark-nav {
+  position: sticky;
+}
+
+.profile {
+  position: sticky;
 }
