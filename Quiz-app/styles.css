@@ -6,11 +6,23 @@
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: FuzzyBubbles-regular;
+}
+
+@font-face {
+  font-family: FuzzyBubbles-bold;
+  src: url(../Fonts/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+  font-family: FuzzyBubbles-regular;
+  src: url(../Fonts/FuzzyBubbles-Regular.ttf);
 }
 
 header {
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
+  padding: 10px;
 }
 
 .card {
@@ -43,8 +55,6 @@ header {
 .nav {
   position: sticky;
   bottom: 0;
-  border: 1px solid red;
-  padding: 5px;
 }
 
 .nav-ul {
@@ -88,7 +98,7 @@ img {
   text-align: center;
 }
 /* Wieso functioniert das Sticky nicht*/
-.homepage {
+.homepage-nav {
   position: sticky;
 }
 
@@ -99,6 +109,55 @@ img {
   /* Wieso ist das Bild vom Bookmark in der Navbar größer?*/
 }
 
-.profile {
+.profile-nav {
   position: sticky;
+}
+
+.profile-main {
+  margin: 20px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-me h3 {
+  position: relative;
+  left: 25px;
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  height: 50px;
+  width: auto;
+}
+
+.settings-title {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.dark-mode-text {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+/* Wieso geht dark-mode-text nicht nach links? */
+.dark-mode-switch {
+  align-self: flex-end;
 }
