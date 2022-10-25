@@ -52,7 +52,7 @@ header {
   right: 0;
 }
 
-.nav {
+footer {
   position: sticky;
   bottom: 0;
 }
@@ -79,7 +79,6 @@ img {
 
 .tag-container {
   display: flex;
-  flex-direction: row;
 }
 
 .tag {
@@ -96,21 +95,6 @@ img {
 .text {
   margin: 20px;
   text-align: center;
-}
-/* Wieso functioniert das Sticky nicht*/
-.homepage-nav {
-  position: sticky;
-}
-
-.bookmark-nav {
-  position: sticky;
-  height: 55px;
-  width: 40px;
-  /* Wieso ist das Bild vom Bookmark in der Navbar größer?*/
-}
-
-.profile-nav {
-  position: sticky;
 }
 
 .profile-main {
@@ -129,7 +113,7 @@ img {
   left: 25px;
 }
 
-.counters {
+.counter-box {
   display: flex;
   justify-content: center;
   gap: 50px;
