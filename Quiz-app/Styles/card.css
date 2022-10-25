@@ -10,18 +10,18 @@
   justify-content: space-between;
 }
 
-.button {
+.card__button {
   width: fit-content;
   align-self: center;
   padding: 5px;
   margin: 5px;
 }
 
-.tag-container {
+.tags {
   display: flex;
 }
 
-.tag {
+.tags__item {
   width: fit-content;
   height: auto;
   border: 1px solid black;
@@ -32,7 +32,7 @@
   align-self: flex-end;
 }
 
-.white-bookmark {
+.card__bookmark {
   position: absolute;
   height: 55px;
   width: 40px;

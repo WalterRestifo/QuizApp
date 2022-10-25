@@ -1,4 +1,8 @@
-.profile {
+.profile__main {
+  margin: 20px;
+}
+
+.visit-card {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,13 +14,13 @@
   left: 25px;
 }
 
-.counter-box {
+.counters {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
 
-.counter {
+.counters__tag {
   display: flex;
   align-items: center;
 }
@@ -25,20 +29,16 @@
   display: flex;
   margin-top: 20px;
   justify-content: center;
-  height: 50px;
-  width: auto;
+  height: 100px;
+  width: 500px;
 }
 
-.settings-title {
+.settings__title {
   align-self: flex-start;
   justify-self: flex-start;
 }
 
-.dark-mode-text {
+.settings__name-for-dark-mode-button {
   align-self: flex-end;
   justify-self: flex-start;
-}
-
-.profile-main {
-  margin: 20px;
 }

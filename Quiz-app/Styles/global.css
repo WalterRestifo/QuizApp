@@ -30,20 +30,12 @@ header {
   color: rgb(227, 221, 221);
 }
 
-.black-bookmark {
-  position: absolute;
-  height: 55px;
-  width: 40px;
-  top: -25px;
-  right: 0;
-}
-
 footer {
   position: sticky;
   bottom: 0;
 }
 
-.nav-ul {
+.nav__ul {
   list-style: none;
   border: 1px solid black;
   display: flex;
@@ -52,7 +44,7 @@ footer {
   align-items: center;
 }
 
-.text {
+.about-me__text {
   margin: 20px;
   text-align: center;
 }
