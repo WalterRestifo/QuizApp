@@ -137,7 +137,8 @@ footer {
   align-self: flex-end;
   justify-self: flex-start;
 }
-/* Wieso geht dark-mode-text nicht nach links? */
-.dark-mode-switch {
-  align-self: flex-end;
+
+.dark-mode {
+  background-color: rgb(45, 43, 43);
+  color: rgb(227, 221, 221);
 }
