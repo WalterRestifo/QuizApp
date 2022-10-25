@@ -53,9 +53,6 @@ header {
 }
 
 footer {
-}
-
-nav {
   position: sticky;
   bottom: 0;
 }
@@ -66,11 +63,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-img {
-  width: 50px;
-  height: 50px;
+  align-items: center;
 }
 
 .button {
