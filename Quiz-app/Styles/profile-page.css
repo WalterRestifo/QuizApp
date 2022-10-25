@@ -1,0 +1,44 @@
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-me h3 {
+  position: relative;
+  left: 25px;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  height: 50px;
+  width: auto;
+}
+
+.settings-title {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.dark-mode-text {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+.profile-main {
+  margin: 20px;
+}
