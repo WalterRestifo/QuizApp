@@ -53,6 +53,9 @@ header {
 }
 
 footer {
+}
+
+nav {
   position: sticky;
   bottom: 0;
 }
