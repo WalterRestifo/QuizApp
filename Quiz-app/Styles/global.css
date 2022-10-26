@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: FuzzyBubbles-regular;
+}
+
+@font-face {
+  font-family: FuzzyBubbles-bold;
+  src: url(../Fonts/FuzzyBubbles-Bold.ttf);
+}
+
+@font-face {
+  font-family: FuzzyBubbles-regular;
+  src: url(../Fonts/FuzzyBubbles-Regular.ttf);
+}
+
+header {
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.dark-mode {
+  background-color: rgb(45, 43, 43);
+  color: rgb(227, 221, 221);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+.nav__ul {
+  list-style: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-me__text {
+  margin: 20px;
+  text-align: center;
+}

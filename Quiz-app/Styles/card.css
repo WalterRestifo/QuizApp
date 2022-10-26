@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  height: 300px;
+  width: auto;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__button {
+  width: fit-content;
+  align-self: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags__item {
+  width: fit-content;
+  height: auto;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: rgb(218, 214, 214);
+  align-self: flex-end;
+}
+
+.card__bookmark {
+  position: absolute;
+  height: 55px;
+  width: 40px;
+  top: -25px;
+  right: 0;
+}
