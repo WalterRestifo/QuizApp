@@ -49,10 +49,10 @@ footer {
   background-color: white;
 }
 
-.--hidden {
-  display: none;
-}
-
 .--not-hidden {
   display: block;
+}
+
+.--hidden {
+  display: none;
 }
