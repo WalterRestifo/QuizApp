@@ -51,10 +51,11 @@
 
 .card__bookmark {
   position: absolute;
-  height: 55px;
-  width: 40px;
-  top: 0px;
+  height: auto;
+  width: 30px;
+  top: 5px;
   right: 0;
+
   border: none;
   background-color: white;
 }
