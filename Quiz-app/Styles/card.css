@@ -1,6 +1,24 @@
+.card--no-bookmarks {
+  position: relative;
+  height: auto;
+  width: auto;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img--no-bookmarks {
+  max-width: 100%;
+  height: auto;
+}
+
 .card {
   position: relative;
-  height: 300px;
+  height: auto;
   width: auto;
   border: 2px solid black;
   margin: 20px;
@@ -9,7 +27,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card__button {
   width: fit-content;
   align-self: center;
@@ -36,6 +53,8 @@
   position: absolute;
   height: 55px;
   width: 40px;
-  top: -25px;
+  top: 0px;
   right: 0;
+  border: none;
+  background-color: white;
 }

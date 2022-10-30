@@ -19,6 +19,10 @@
   src: url(../Fonts/FuzzyBubbles-Regular.ttf);
 }
 
+b {
+  font-family: FuzzyBubbles-bold;
+}
+
 header {
   text-align: center;
   border: 2px solid black;
@@ -44,7 +48,10 @@ footer {
   align-items: center;
 }
 
-.about-me__text {
-  margin: 20px;
-  text-align: center;
+.--hidden {
+  display: none;
+}
+
+.--not-hidden {
+  display: block;
 }
