@@ -1,10 +1,8 @@
-const bodyElement = document.querySelector('[data-js = "body"]');
-const darkModeSwitch = document.querySelector('[data-js = "darkModeSwitch"]');
-
 const spoilerButton1 = document.querySelector('[data-js = "spoiler-button-1"]');
 const spoilerButton2 = document.querySelector('[data-js = "spoiler-button-2"]');
 const answer1 = document.querySelector('[data-js = "answer-1"]');
 const answer2 = document.querySelector('[data-js = "answer-2"]');
+
 const bookmarkColorToChange1 = document.getElementById(
   "bookmark--color-to-change-1"
 );
@@ -28,12 +26,6 @@ const cardBookmarkPage2 = document.querySelector(
   '[data-js = "card-bookmark-page-2"]'
 );
 
-//darkModeSwitch works for the profile page but...
-darkModeSwitch.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark-mode");
-});
-// ...all other buttons with the same method don´t do it. Why?
-// I also tried the contains-remove-add-method, but it doesn´t work either.
 spoilerButton1.addEventListener("click", () => {
   if (answer1.classList.contains("hidden")) {
     answer1.classList.remove("--hidden");
@@ -46,6 +38,7 @@ spoilerButton1.addEventListener("click", () => {
 
 spoilerButton2.addEventListener("click", () => {
   answer2.classList.toggle("--hidden");
+  console.log("spoiler");
 });
 
 //bookmarsks buttons don´t work. Probably for the same reason
