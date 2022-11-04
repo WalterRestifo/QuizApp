@@ -33,17 +33,13 @@
 .settings {
   display: flex;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-between;
   height: 100px;
   width: 500px;
+  flex-direction: column;
 }
 
 .settings__title {
   align-self: flex-start;
-  justify-self: flex-start;
-}
-
-.settings__name-for-dark-mode-button {
-  align-self: flex-end;
   justify-self: flex-start;
 }

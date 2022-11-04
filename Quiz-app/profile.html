@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Styles/styles.css" />
-    <script src="index.js" defer></script>
+    <script src="Scripts/profile.js" defer></script>
   </head>
   <body data-js="body">
     <header class="header">
@@ -53,8 +53,12 @@
       </section>
       <section class="settings">
         <h3 class="settings__title">Settings</h3>
-        <p class="settings__name-for-dark-mode-button">Dark Mode</p>
-        <button data-js="darkModeSwitch">Switch for Dark Mode</button>
+        <label>
+          Dark mode
+          <button class="card__button" data-js="darkModeSwitch">
+            Switch for Dark Mode
+          </button>
+        </label>
       </section>
     </main>
     <footer>

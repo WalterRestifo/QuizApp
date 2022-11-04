@@ -49,8 +49,9 @@ footer {
   background-color: white;
 }
 
-.--not-hidden {
-  display: block;
+.nav__icons {
+  width: auto;
+  height: auto;
 }
 
 .--hidden {
