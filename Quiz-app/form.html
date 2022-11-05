@@ -13,19 +13,26 @@
       <h1>Quiz App</h1>
     </header>
     <section>
-    <form action="" class="form">
+    <form action="" class="form" data-js="form">
+        <section>
         <label for="your-question">
-           <h2>Your question: </h2>
+           <h2>Your question : </h2>
         </label>
-        <input id="your-question" type="text"> 
+        <input id="your-question" type="text" class="text-input" name="yourQuestion" data-js="your-question" > 
+        </section>
+        <section>
         <label for="your-answer">
-            <h2>Your answer: </h2>
+            <h2>Your answer : </h2>
         </label>
-        <input id="your-answer" type="text"> 
+        <input id="your-answer" type="text" class="text-input" name="yourAnswer" data-js="your-answer"> 
+        </section>
+        <section>
         <label for="tag">
-            <h2>Tag: </h2>
+            <h2>Tag : </h2>
         </label>
-        <input id="tag" type="text"> 
+        <input id="tag" type="text" class="text-input" name="yourTag" data-js="your-tag">
+        </section>
+        <button class="form__button" type="submit" data-js="add-card-button" >Add card</button> 
     </form>
     </section>
     <footer>
@@ -34,8 +41,8 @@
             <li>
               <a href="index.html"
                 ><img
-                  src="Assets/homepage-black.svg"
-                  alt="a black sign of a little home"
+                  src="Assets/homepage-white.svg"
+                  alt="a sign of a little home"
                   width="50"
                   height="50"
               /></a>
@@ -50,8 +57,13 @@
               /></a>
             </li>
             <li>
-                <a href=""></a>
-            </li>
+                <a href="form.html">
+                  <img  src="Assets/plus-black.svg"
+                   alt="a filled plus sign"
+                   width="40"
+                   height="40" />
+                </a>
+              </li>
             <li>
               <a href="profile.html"
                 ><img

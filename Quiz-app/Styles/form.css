@@ -2,6 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  min-width: 100vw;
   height: auto;
   width: auto;
+}
+
+.text-input {
+  height: auto;
+  width: auto;
+  min-height: 10vh;
+  min-width: 80vw;
+  font-size: large;
+}
+
+.form__button {
+  width: 60vw;
+  height: 5vh;
+  font-size: 2rem;
 }

@@ -12,6 +12,7 @@
     <header class="header">
       <h1>Quiz App</h1>
     </header>
+    <main>
     <section class="card">
       <button class="card__bookmark" data-js="bookmark-button-1" id="bookmark--color-to-change-1"><img
           
@@ -23,7 +24,7 @@
       </p>
       <button class="card__button" data-js = "spoiler-button-1">Show Answer</button>
       <article >
-        <p class=" --hidden --not-hidden" data-js="answer-1"> 
+        <p class=" --hidden " data-js="answer-1"> 
           Flexbox is a web layout mode in CSS3.
 
           It allows web designers design complex, flexible web layouts that were very difficult to design using CSS before Flexbox was invented.   
@@ -41,7 +42,7 @@
           src="Assets/bookmark-white.svg"
           alt="a white bookmark"
       /></button>
-      <p>
+      <p class="card__text">
         What is a flex container and what is its job?
       </p>
       <button class="card__button" data-js = "spoiler-button-2">Show Answer</button>
@@ -67,7 +68,7 @@
           src="Assets/bookmark-white.svg"
           alt="a white bookmark"
       /></button>
-      <p>
+      <p class="card__text">
         What is a flex item and what is its job?
       </p>
       <button class="card__button" data-js = "spoiler-button-3">Show Answer</button>
@@ -92,7 +93,7 @@
           src="Assets/bookmark-white.svg"
           alt="a white bookmark"
       /></button>
-      <p>
+      <p class="card__text">
         How do you turn a html element into a flex container?
       </p>
       <button class="card__button" data-js = "spoiler-button-4">Show Answer</button>
@@ -113,7 +114,7 @@
           src="Assets/bookmark-white.svg"
           alt="a white bookmark"
       /></button>
-      <p>
+      <p class="card__text">
         What does justify-content CSS property do and what values can it have?
       </p>
       <button class="card__button" data-js = "spoiler-button-5">Show Answer</button>
@@ -134,6 +135,7 @@
         <p class="tags__item">#flexbox</p>
       </article>
     </section>
+  </main>
     <footer>
       <nav class=>
         <ul class="nav__ul" role="list">
@@ -156,7 +158,12 @@
             /></a>
           </li>
           <li>
-            <a href="form.html"><img class="nav__icons" src="Assets/plus-white.png" alt="a plus sign"></a>
+            <a href="form.html">
+              <img src="Assets/plus-white.svg" 
+              alt="a plus sign"
+              width="40"
+              height="40"
+              /></a>
           </li>
           <li>
             <a href="profile.html"

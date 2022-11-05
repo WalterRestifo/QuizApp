@@ -23,6 +23,13 @@ b {
   font-family: FuzzyBubbles-bold;
 }
 
+main {
+  min-height: 90vh;
+  min-width: 100vw;
+  height: auto;
+  width: auto;
+}
+
 header {
   text-align: center;
   border: 2px solid black;
