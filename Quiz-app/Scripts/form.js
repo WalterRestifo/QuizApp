@@ -1,5 +1,20 @@
 const addButton = document.querySelector('[data-js="add-card-button"]');
 const form = document.querySelector('[data-js="form"]');
+const questionElement = document.querySelector('[data-js="questionElement"]');
+const answerElement = document.querySelector('[data-js="answerElement"]');
+const tagElement = document.querySelector('[data-js="tagElement"]');
+const questionCharacterAmountLeft = document.querySelector(
+  '[data-js="questionAmountLeft"]'
+);
+const answerCharacterAmountLeft = document.querySelector(
+  '[data-js="answerAmountLeft"]'
+);
+const tagCharacterAmountLeft = document.querySelector(
+  '[data-js="tagAmountLeft"]'
+);
+const maxLengthQuestion = questionElement.getAttribute("maxlength");
+const maxLengthAnswer = answerElement.getAttribute("maxlength");
+const maxLengthTag = tagElement.getAttribute("maxlength");
 
 function addCard(yourQuestion, yourAnswer, yourTag) {
   const section = document.createElement("section");
@@ -40,6 +55,10 @@ function addCard(yourQuestion, yourAnswer, yourTag) {
   document.body.append(section);
 }
 
+function updateAmountLeft(target, value) {
+  target.textContent = value;
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -48,5 +67,29 @@ form.addEventListener("submit", (e) => {
   const yourTag = e.target.yourTag.value;
 
   addCard(yourQuestion, yourAnswer, yourTag);
-  //console.log(yourQuestion);
+});
+
+updateAmountLeft(questionCharacterAmountLeft, maxLengthQuestion);
+updateAmountLeft(answerCharacterAmountLeft, maxLengthAnswer);
+updateAmountLeft(tagCharacterAmountLeft, maxLengthTag);
+
+questionElement.addEventListener("input", () => {
+  updateAmountLeft(
+    questionCharacterAmountLeft,
+    maxLengthQuestion - questionElement.value.length
+  );
+});
+
+answerElement.addEventListener("input", () => {
+  updateAmountLeft(
+    answerCharacterAmountLeft,
+    maxLengthAnswer - answerElement.value.length
+  );
+});
+
+tagElement.addEventListener("input", () => {
+  updateAmountLeft(
+    tagCharacterAmountLeft,
+    maxLengthTag - tagElement.value.length
+  );
 });

@@ -19,19 +19,31 @@
         <label for="your-question">
            <h2>Your question : </h2>
         </label>
-        <input id="your-question" type="text" class="text-input" name="yourQuestion" data-js="your-question" > 
+        <textarea name="yourQuestion" id="your-question" cols="24" rows="3" data-js="questionElement" maxlength="150">
+        </textarea>   
+        <p>
+          <small class="character-count" >(<span data-js="questionAmountLeft" ></span> characters left) </small>
+        </p>
         </section>
         <section>
         <label for="your-answer">
             <h2>Your answer : </h2>
         </label>
-        <input id="your-answer" type="text" class="text-input" name="yourAnswer" data-js="your-answer"> 
-        </section>
+        <textarea name="yourAnswer" id="your-answer" cols="24" rows="3" data-js="answerElement" maxlength="150">
+        </textarea> 
+        <p>
+          <small class="character-count" >(<span data-js="answerAmountLeft" ></span> characters left) </small>
+        </p>
+      </section>
         <section>
         <label for="tag">
             <h2>Tag : </h2>
         </label>
-        <input id="tag" type="text" class="text-input" name="yourTag" data-js="your-tag">
+        <textarea name="yourTag" id="tag" cols="24" rows="3" data-js="tagElement" maxlength="30">
+        </textarea>
+        <p>
+          <small class="character-count" >(<span data-js="tagAmountLeft" ></span> characters left) </small>
+        </p>
         </section>
         <button class="form__button" type="submit" data-js="add-card-button" >Add card</button> 
     </form>
