@@ -12,9 +12,9 @@ const answerCharacterAmountLeft = document.querySelector(
 const tagCharacterAmountLeft = document.querySelector(
   '[data-js="tagAmountLeft"]'
 );
-const maxLengthQuestion = questionElement.getAttribute("maxlength");
-const maxLengthAnswer = answerElement.getAttribute("maxlength");
-const maxLengthTag = tagElement.getAttribute("maxlength");
+const questionMaxLength = questionElement.getAttribute("maxlength");
+const answerMaxLength = answerElement.getAttribute("maxlength");
+const tagMaxLength = tagElement.getAttribute("maxlength");
 
 function addCard(yourQuestion, yourAnswer, yourTag) {
   const section = document.createElement("section");
@@ -69,27 +69,27 @@ form.addEventListener("submit", (e) => {
   addCard(yourQuestion, yourAnswer, yourTag);
 });
 
-updateAmountLeft(questionCharacterAmountLeft, maxLengthQuestion);
-updateAmountLeft(answerCharacterAmountLeft, maxLengthAnswer);
-updateAmountLeft(tagCharacterAmountLeft, maxLengthTag);
+updateAmountLeft(questionCharacterAmountLeft, questionMaxLength);
+updateAmountLeft(answerCharacterAmountLeft, answerMaxLength);
+updateAmountLeft(tagCharacterAmountLeft, tagMaxLength);
 
 questionElement.addEventListener("input", () => {
   updateAmountLeft(
     questionCharacterAmountLeft,
-    maxLengthQuestion - questionElement.value.length
+    questionMaxLength - questionElement.value.length
   );
 });
 
 answerElement.addEventListener("input", () => {
   updateAmountLeft(
     answerCharacterAmountLeft,
-    maxLengthAnswer - answerElement.value.length
+    answerMaxLength - answerElement.value.length
   );
 });
 
 tagElement.addEventListener("input", () => {
   updateAmountLeft(
     tagCharacterAmountLeft,
-    maxLengthTag - tagElement.value.length
+    tagMaxLength - tagElement.value.length
   );
 });
