@@ -9,7 +9,7 @@
   width: auto;
 }
 
-.text-input {
+textarea {
   height: auto;
   width: auto;
   min-height: 10vh;
@@ -21,4 +21,8 @@
   width: 60vw;
   height: 5vh;
   font-size: 2rem;
+}
+
+.character-count {
+  color: rgb(20, 16, 16);
 }
