@@ -22,6 +22,9 @@
 b {
   font-family: FuzzyBubbles-bold;
 }
+body {
+  background-color: white;
+}
 
 main {
   min-height: 90vh;
@@ -44,6 +47,11 @@ header {
 footer {
   position: sticky;
   bottom: 0;
+  background-color: inherit;
+}
+
+nav {
+  background-color: inherit;
 }
 
 .nav__ul {
@@ -53,7 +61,7 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  background-color: white;
+  background-color: inherit;
 }
 
 .nav__icons {

@@ -15,7 +15,8 @@
     <main class="profile__main">
       <section class="visit-card">
         <img
-          src="Assets/user_profile_icon_176439.svg"
+          data-js="profileImage"
+          src="Assets/profile-white.svg"
           alt="Profile picture"
           width="70"
           height="70"
@@ -34,6 +35,7 @@
       <section class="counters">
         <div class="counters__tag">
           <img
+            data-js="questionSign"
             src="Assets/question-sign.svg"
             alt="a sign of a question"
             width="50px"
@@ -43,6 +45,7 @@
         </div>
         <div class="counters__tag">
           <img
+            data-js="bookmarksCounter"
             src="Assets/bookmark-black.svg"
             alt="a black bookmark sign"
             width="50px"
@@ -63,10 +66,11 @@
     </main>
     <footer>
       <nav>
-        <ul class="nav__ul" role="list">
+        <ul class="nav__ul" role="list" data-js="navUl">
           <li>
             <a href="index.html"
               ><img
+                data-js="homepageIcon"
                 src="Assets/homepage-white.svg"
                 alt="a little home"
                 width="50"
@@ -76,6 +80,7 @@
           <li>
             <a href="bookmarks.html"
               ><img
+                data-js="bookmarkIcon"
                 src="Assets/bookmark-white.svg"
                 alt="a white bookmark"
                 width="40"
@@ -85,6 +90,7 @@
           <li>
             <a href="form.html">
               <img
+                data-js="formIcon"
                 src="Assets/plus-white.svg"
                 alt="a plus sign"
                 width="40"
@@ -94,6 +100,7 @@
           <li>
             <a href="profile.html"
               ><img
+                data-js="profileIcon"
                 src="Assets/profile-black.svg"
                 alt="a profile sign"
                 width="45"
