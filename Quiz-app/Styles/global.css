@@ -61,6 +61,10 @@ footer {
   height: auto;
 }
 
+p {
+  transition: ease 0.4s opacity;
+}
+
 .--hidden {
-  display: none;
+  opacity: 0;
 }
