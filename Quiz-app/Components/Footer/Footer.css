@@ -1,0 +1,19 @@
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+.nav__ul {
+  list-style: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+}
+
+.nav__icons {
+  width: auto;
+  height: auto;
+}

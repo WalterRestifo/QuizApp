@@ -1,10 +1,15 @@
-.profile__main {
-  margin: 20px;
+main {
+  /* margin: 20px;  for .profile__main*/
   min-height: 90vh;
   min-width: 100vw;
   height: auto;
   width: auto;
 }
+p {
+  transition: ease 0.4s opacity;
+}
+
+/* profile-page*/
 
 .visit-card {
   display: flex;
@@ -109,4 +114,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* for form-page*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  min-width: 100vw;
+  height: auto;
+  width: auto;
+}
+
+textarea {
+  height: auto;
+  width: auto;
+  min-height: 10vh;
+  min-width: 80vw;
+  font-size: large;
+}
+
+.form__button {
+  width: 60vw;
+  height: 5vh;
+  font-size: 2rem;
+}
+
+.character-count {
+  color: rgb(20, 16, 16);
 }
