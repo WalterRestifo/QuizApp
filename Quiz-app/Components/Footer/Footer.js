@@ -7,6 +7,7 @@ allLinks.forEach((link) => {
       page.classList.remove("current");
     });
     const hrefAttribute = event.target.getAttribute("href");
+    console.log(hrefAttribute);
     const currentPage = document.querySelector(hrefAttribute);
     currentPage.classList.add("current");
   });

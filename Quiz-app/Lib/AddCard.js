@@ -1,23 +1,3 @@
-export function switchTextContent(target, text1, text2) {
-  if (target.textContent === text1) {
-    target.textContent = text2;
-  } else {
-    target.textContent = text1;
-  }
-}
-
-export function switchAttributeValue(target, attributeName, value1, value2) {
-  if (target.getAttribute(attributeName) === value1) {
-    target.setAttribute(attributeName, value2);
-  } else {
-    target.setAttribute(attributeName, value1);
-  }
-}
-
-export function updateAmountLeft(target, value) {
-  target.textContent = value;
-}
-
 export function addCard(yourQuestion, yourAnswer, yourTag) {
   const section = document.createElement("section");
   section.classList.add("card");
