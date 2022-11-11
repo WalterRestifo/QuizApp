@@ -1,4 +1,4 @@
-export const questionObj = {
+const questionObj = {
   element: document.querySelector('[data-js="questionElement"]'),
   characterAmountLeft: document.querySelector('[data-js="questionAmountLeft"]'),
   maxLenght: document
@@ -6,7 +6,7 @@ export const questionObj = {
     .getAttribute("maxlength"),
 };
 
-export const answerObj = {
+const answerObj = {
   element: document.querySelector('[data-js="answerElement"]'),
   characterAmountLeft: document.querySelector('[data-js="answerAmountLeft"]'),
   maxLenght: document
@@ -14,7 +14,7 @@ export const answerObj = {
     .getAttribute("maxlength"),
 };
 
-export const tagObj = {
+const tagObj = {
   element: document.querySelector('[data-js="tagElement"]'),
   characterAmountLeft: document.querySelector('[data-js="tagAmountLeft"]'),
   maxLenght: document
@@ -22,4 +22,4 @@ export const tagObj = {
     .getAttribute("maxlength"),
 };
 
-export const formDatas = [questionObj, answerObj, tagObj];
+export const textAreaDatas = [questionObj, answerObj, tagObj];

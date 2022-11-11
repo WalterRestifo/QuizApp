@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="Scripts/form.js" defer></script>
+  </head>
+  <body data-js="body">
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+    <section>
+    <form action="" class="form" data-js="form">
+        <section>
+        <label for="your-question">
+           <h2>Your question : </h2>
+        </label>
+        <textarea name="yourQuestion" id="your-question" cols="24" rows="3" data-js="questionElement" maxlength="150">
+        </textarea>   
+        <p>
+          <small class="character-count" >(<span data-js="questionAmountLeft" ></span> characters left) </small>
+        </p>
+        </section>
+        <section>
+        <label for="your-answer">
+            <h2>Your answer : </h2>
+        </label>
+        <textarea name="yourAnswer" id="your-answer" cols="24" rows="3" data-js="answerElement" maxlength="150">
+        </textarea> 
+        <p>
+          <small class="character-count" >(<span data-js="answerAmountLeft" ></span> characters left) </small>
+        </p>
+      </section>
+        <section>
+        <label for="tag">
+            <h2>Tag : </h2>
+        </label>
+        <textarea name="yourTag" id="tag" cols="24" rows="3" data-js="tagElement" maxlength="30">
+        </textarea>
+        <p>
+          <small class="character-count" >(<span data-js="tagAmountLeft" ></span> characters left) </small>
+        </p>
+        </section>
+        <button class="form__button" type="submit" data-js="add-card-button" >Add card</button> 
+    </form>
+    </section>
+  </main>
+    <footer>
+        <nav class=>
+          <ul class="nav__ul" role="list">
+            <li>
+              <a href="index.html"
+                ><img
+                  src="Assets/homepage-white.svg"
+                  alt="a sign of a little home"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+            <li>
+              <a href="bookmarks.html"
+                ><img
+                  src="Assets/bookmark-white.svg"
+                  alt="a white bookmark"
+                  width="40"
+                  height="40"
+              /></a>
+            </li>
+            <li>
+                <a href="form.html">
+                  <img  src="Assets/plus-black.svg"
+                   alt="a filled plus sign"
+                   width="40"
+                   height="40" />
+                </a>
+              </li>
+            <li>
+              <a href="profile.html"
+                ><img
+                  src="Assets/profile-white.svg"
+                  alt="a profile sign"
+                  width="50"
+                  height="50"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
+  

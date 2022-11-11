@@ -6,8 +6,10 @@ const bookmarkButtons = document.querySelectorAll(
   '[data-js = "bookmark-button"]'
 );
 
-import { switchAttributeValue } from "../../Lib/Functions.js";
-import { switchTextContent } from "../../Lib/Functions.js";
+import {
+  switchAttributeValue,
+  switchTextContent,
+} from "../../Lib/Functions.js";
 
 bookmarkButtons.forEach((bookmarkButton) => {
   bookmarkButton.addEventListener("click", (e) => {

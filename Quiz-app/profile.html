@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="Scripts/profile.js" defer></script>
+  </head>
+  <body data-js="body">
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main class="profile__main">
+      <section class="visit-card">
+        <img
+          data-js="profileImage"
+          src="Assets/profile-white.svg"
+          alt="Profile picture"
+          width="70"
+          height="70"
+        />
+        <h2>Max Mustermann</h2>
+      </section>
+      <section class="about-me">
+        <h3>About me</h3>
+        <p class="about-me__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+          repellendus tempora blanditiis numquam libero odit earum! Saepe ex
+          excepturi ullam, eum dicta molestias odio ipsa, neque hic, sequi illo
+          impedit?
+        </p>
+      </section>
+      <section class="counters">
+        <div class="counters__tag">
+          <img
+            data-js="questionSign"
+            src="Assets/question-sign.svg"
+            alt="a sign of a question"
+            width="50px"
+            height="50px"
+          />
+          12
+        </div>
+        <div class="counters__tag">
+          <img
+            data-js="bookmarksCounter"
+            src="Assets/bookmark-black.svg"
+            alt="a black bookmark sign"
+            width="50px"
+            height="50px"
+          />
+          4
+        </div>
+      </section>
+      <section class="settings">
+        <h3 class="settings__title">Settings</h3>
+        <p>Dark mode</p>
+        <label class="switch">
+          <input type="checkbox" data-js="darkModeSwitch" />
+          <span class="slider round"></span>
+        </label>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="nav__ul" role="list" data-js="navUl">
+          <li>
+            <a href="index.html"
+              ><img
+                data-js="homepageIcon"
+                src="Assets/homepage-white.svg"
+                alt="a little home"
+                width="50"
+                height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmarks.html"
+              ><img
+                data-js="bookmarkIcon"
+                src="Assets/bookmark-white.svg"
+                alt="a white bookmark"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html">
+              <img
+                data-js="formIcon"
+                src="Assets/plus-white.svg"
+                alt="a plus sign"
+                width="40"
+                height="40"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><img
+                data-js="profileIcon"
+                src="Assets/profile-black.svg"
+                alt="a profile sign"
+                width="45"
+                height="45"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

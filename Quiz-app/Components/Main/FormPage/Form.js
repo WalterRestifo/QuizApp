@@ -1,7 +1,6 @@
 const form = document.querySelector('[data-js="form"]');
 
-import { addCard } from "../../../Lib/Functions.js";
-import { updateAmountLeft } from "../../../Lib/Functions.js";
+import { addCard, updateAmountLeft } from "../../../Lib/Functions.js";
 import { textAreaDatas } from "../../../Data/Data.js";
 
 form.addEventListener("submit", (e) => {
