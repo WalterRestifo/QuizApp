@@ -11,8 +11,6 @@ const bookmarksCounterIcon = document.querySelector(
 );
 const navUl = document.querySelector('[data-js="navUl"]');
 
-// console.log(bodyElement)
-// console.log(darkModeSwitch)
 darkModeSwitch.addEventListener("click", () => {
   bodyElement.classList.toggle("dark-mode");
 
