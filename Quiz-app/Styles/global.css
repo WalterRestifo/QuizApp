@@ -33,46 +33,25 @@ main {
   width: auto;
 }
 
-header {
-  text-align: center;
-  border: 2px solid black;
-  padding: 10px;
+.--hidden {
+  opacity: 0;
 }
 
-.dark-mode {
-  background-color: rgb(45, 43, 43);
-  color: rgb(227, 221, 221);
-}
-
-footer {
-  position: sticky;
-  bottom: 0;
-  background-color: inherit;
-}
-
-nav {
-  background-color: inherit;
-}
-
-.nav__ul {
-  list-style: none;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: inherit;
-}
-
-.nav__icons {
-  width: auto;
+main {
+  /* margin: 20px;  for .profile__main*/
+  min-height: 90vh;
+  min-width: 100vw;
   height: auto;
+  width: auto;
 }
-
 p {
   transition: ease 0.4s opacity;
 }
 
-.--hidden {
-  opacity: 0;
+.page {
+  display: none;
+}
+
+.page.current {
+  display: block;
 }

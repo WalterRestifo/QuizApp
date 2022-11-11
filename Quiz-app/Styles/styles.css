@@ -1,5 +1,4 @@
 @import "../Components/Header/Header.css";
-@import "../Components/Main/Main.css";
 @import "../Components/Footer/Footer.css";
 @import "../Components/Cards/Cards.css";
 @import "../Components/Darkmode/Darkmode.css";
@@ -7,40 +6,4 @@
 @import "../Components/Main/BookmarksPage/Bookmarks.css";
 @import "../Components/Main/FormPage/Form.css";
 @import "../Components/Main/ProfilePage/Profile.css";
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: FuzzyBubbles-regular;
-}
-
-@font-face {
-  font-family: FuzzyBubbles-bold;
-  src: url(../Fonts/FuzzyBubbles-Bold.ttf);
-}
-
-@font-face {
-  font-family: FuzzyBubbles-regular;
-  src: url(../Fonts/FuzzyBubbles-Regular.ttf);
-}
-
-b {
-  font-family: FuzzyBubbles-bold;
-}
-
-.--hidden {
-  opacity: 0;
-}
-
-.page {
-  display: none;
-}
-
-.page.current {
-  display: block;
-}
+@import "./global.css";

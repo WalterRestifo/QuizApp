@@ -6,9 +6,9 @@ allLinks.forEach((link) => {
     allPages.forEach((page) => {
       page.classList.remove("current");
     });
-    const hrefAttribute = event.target.getAttribute("href");
-    console.log(hrefAttribute);
-    const currentPage = document.querySelector(hrefAttribute);
+    const linkHrefAttribute = event.currentTarget.getAttribute("href");
+    console.log(linkHrefAttribute);
+    const currentPage = document.querySelector(linkHrefAttribute);
     currentPage.classList.add("current");
   });
 });

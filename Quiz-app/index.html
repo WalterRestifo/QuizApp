@@ -6,355 +6,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-app</title>
     <link rel="stylesheet" href="Styles/styles.css" />
-      <script src="./Scripts/index.js" type="module"></script>
+    <script src="./Scripts/index.js" type="module"></script>
   </head>
+
   <body data-js="body">
     <header class="header">
       <h1>Quiz App</h1>
     </header>
+
     <section data-js="page-index" class="page current" id="index">
-    <main>
-    <section class="card">
-      <button class="card__bookmark" data-js="bookmark-button"><img
-          
-          src="Assets/bookmark-white.svg"
-          alt="a white bookmark"
-      /></button>
-      <p class="card__text">
-        What is Flexbox?
-      </p>
-      <button class="card__button" data-js = "spoiler-button">Show Answer</button>
-      <article >
-        <p class=" --hidden " data-js="answer"> 
-          Flexbox is a web layout mode in CSS3.
+      <main>
+        <section class="card">
+          <button class="card__bookmark" data-js="bookmark-button">
+            <img src="Assets/bookmark-white.svg" alt="a white bookmark" />
+          </button>
+          <p class="card__text">What is Flexbox?</p>
+          <button class="card__button" data-js="spoiler-button">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer">
+              Flexbox is a web layout mode in CSS3. It allows web designers
+              design complex, flexible web layouts that were very difficult to
+              design using CSS before Flexbox was invented.
+            </p>
+          </article>
 
-          It allows web designers design complex, flexible web layouts that were very difficult to design using CSS before Flexbox was invented.   
-        </p>
-      </article>
-      
-      <article class="tags">
-        <p class="tags__item">#css</p>
-        <p class="tags__item">#flexbox</p>
-      </article>
-    </section>
-    <section class="card">
-      <button class="card__bookmark" data-js="bookmark-button"><img
-          class="card__bookmark"
-          src="Assets/bookmark-white.svg"
-          alt="a white bookmark"
-      /></button>
-      <p class="card__text">
-        What is a flex container and what is its job?
-      </p>
-      <button class="card__button" data-js = "spoiler-button">Show Answer</button>
-      <article >
-        <p class="--hidden" data-js="answer"> 
-          A flex container is an element that contains child elemens that are positioned depending on the flex container settings.
-
-          Every HTML element can be converted to a flex container. The child elements of such HTML element then become flex items.
-
-          The flex container defines how the flex items contained inside the flex container will be positioned and sized.
-
-        </p>
-      </article>
-      <article class="tags">
-        
-        <p class="tags__item">#css</p>
-        <p class="tags__item">#flexbox</p>
-      </article>
-    </section>
-    <section class="card">
-      <button class="card__bookmark" data-js="bookmark-button"><img
-          class="card__bookmark"
-          src="Assets/bookmark-white.svg"
-          alt="a white bookmark"
-      /></button>
-      <p class="card__text">
-        What is a flex item and what is its job?
-      </p>
-      <button class="card__button" data-js = "spoiler-button">Show Answer</button>
-      <article >
-        <p class="--hidden" data-js="answer"> 
-          A flex item is a child element of a flex container.
-
-          Any HTML element can be converted to a flex item just by making its parent element a flex container.
-
-          A flex item can be positioned and sized using flex container settings.
-        </p>
-      </article>
-      <article class="tags">
-        
-        <p class="tags__item">#css</p>
-        <p class="tags__item">#flexbox</p>
-      </article>
-    </section>
-    <section class="card">
-      <button class="card__bookmark" data-js="bookmark-button" ><img
-          class="card__bookmark"
-          src="Assets/bookmark-white.svg"
-          alt="a white bookmark"
-      /></button>
-      <p class="card__text">
-        How do you turn a html element into a flex container?
-      </p>
-      <button class="card__button" data-js = "spoiler-button">Show Answer</button>
-      <article >
-        <p class="--hidden" data-js="answer"> 
-          To turn a HTML element into a flex container, you need to set a CSS display property to flex
-        </p>
-      </article>
-      <article class="tags">
-        
-        <p class="tags__item">#css</p>
-        <p class="tags__item">#flexbox</p>
-      </article>
-    </section>
-    <section class="card">
-      <button class="card__bookmark" data-js="bookmark-button" ><img
-  
-          src="Assets/bookmark-white.svg"
-          alt="a white bookmark"
-      /></button>
-      <p class="card__text">
-        What does justify-content CSS property do and what values can it have?
-      </p>
-      <button class="card__button" data-js = "spoiler-button">Show Answer</button>
-      <article >
-        <p  class="--hidden" data-js="answer"> 
-          The CSS property <b>justify-content</b>  defines how the flex items within a flex container will be justified. <br>
-          The justification is always done on the main axis. So for the horizontal orientation of a flex container the <b>flex-start</b>  will justify items to left, <b>flex-end</b>  will justify items to right. <br>
-          <b>flex-start </b> - justifies the content to left for horizontal orientation or to top for vertical orientation <br>
-          <b>flex-end</b>  - justifies the content to right for horizontal orientation or to bottom for vertical orientation <br>
-          <b>center</b>  - justifies the content to center <br>
-          <b>space-between</b>  - when there are multiple flex items in a flex container, they will be justified evenly, however, the first and last item won't have space on their outer edges <br>
-          <b>space-around</b>  - when there are multiple flex items in a flex container, they will be justified evenly.
-        </p>
-      </article>
-      <article class="tags">
-        
-        <p class="tags__item">#css</p>
-        <p class="tags__item">#flexbox</p>
-      </article>
-    </section>
-  </main>
-  </section>
-    
-  
-  <section  data-js="page-bookmarks" class="page" id="bookmarks">
-    <main>
-      <section
-        class="card--no-bookmarks --not-hidden"
-        data-js="card--no-bookmarks"
-      >
-        <h2>Ooops...</h2>
-        <p>
-          <img
-            class="img--no-bookmarks"
-            src="./Assets/sad-smiley.png"
-            alt="a sad smiley"
-          />
-          You don´t have any bookmarks yet...
-        </p>
-      </section>
-      <section class="card --hidden">
-        <button class="card__bookmark" data-js="bookmark-button-1">
-          <img
-            class="card__bookmark"
-            src="Assets/bookmark-black.svg"
-            alt="a black bookmark"
-            width="50px"
-            height="50px"
-          />
-        </button>
-        <p class="card__text">What is Flexbox?</p>
-        <button class="card__button" data-js="spoiler-button-1">
-          Show Answer
-        </button>
-        <article>
-          <p class="--hidden" data-js="answer-1">
-            Flexbox is a web layout mode in CSS3. It allows web designers design
-            complex, flexible web layouts that were very difficult to design
-            using CSS before Flexbox was invented.
-          </p>
-        </article>
-        <article class="tags">
-          <p class="tags__item">#css</p>
-          <p class="tags__item">#flexbox</p>
-        </article>
-      </section>
-      <section class="card --hidden">
-        <button class="card__bookmark" data-js="bookmark-button-2">
-          <img
-            class="card__bookmark"
-            src="Assets/bookmark-black.svg"
-            alt="a black bookmark"
-            width="50px"
-            height="50px"
-          />
-        </button>
-        <p>What is a flex container and what is its job?</p>
-        <button class="card__button" data-js="spoiler-button-2">
-          Show Answer
-        </button>
-        <article>
-          <p class="--hidden" data-js="answer-2">
-            A flex container is an element that contains child elemens that are
-            positioned depending on the flex container settings. Every HTML
-            element can be converted to a flex container. The child elements of
-            such HTML element then become flex items. The flex container defines
-            how the flex items contained inside the flex container will be
-            positioned and sized.
-          </p>
-        </article>
-        <article class="tags">
-          <p class="tags__item">#css</p>
-          <p class="tags__item">#flexbox</p>
-        </article>
-      </section>
-      <section class="card --hidden" >
-        <button class="card__bookmark" data-js="bookmark-button-3">
-          <img
-            class="card__bookmark"
-            src="Assets/bookmark-black.svg"
-            alt="a black bookmark"
-            width="50px"
-            height="50px"
-          />
-        </button>
-        <p>What is a flex item and what is its job?</p>
-        <button class="card__button" data-js="spoiler-button-3">
-          Show Answer
-        </button>
-        <article>
-          <p class="--hidden" data-js="answer-3">
-            A flex item is a child element of a flex container. Any HTML element
-            can be converted to a flex item just by making its parent element a
-            flex container. A flex item can be positioned and sized using flex
-            container settings.
-          </p>
-        </article>
-        <article class="tags">
-          <p class="tags__item">#css</p>
-          <p class="tags__item">#flexbox</p>
-        </article>
-      </section>
-      <section class="card --hidden" >
-        <button class="card__bookmark" data-js="bookmark-button-4">
-          <img
-            class="card__bookmark"
-            src="Assets/bookmark-black.svg"
-            alt="a black bookmark"
-            width="50px"
-            height="50px"
-          />
-        </button>
-        <p>How do you turn a html element into a flex container?</p>
-        <button class="card__button" data-js="spoiler-button-4">
-          Show Answer
-        </button>
-        <article>
-          <p class="--hidden" data-js="answer-4">
-            To turn a HTML element into a flex container, you need to set a CSS
-            display property to flex
-          </p>
-        </article>
-        <article class="tags">
-          <p class="tags__item">#css</p>
-          <p class="tags__item">#flexbox</p>
-        </article>
-      </section>
-      <section class="card --hidden" >
-        <button class="card__bookmark" data-js="bookmark-button-5">
-          <img
-            class="card__bookmark"
-            src="Assets/bookmark-black.svg"
-            alt="a black bookmark"
-            width="50px"
-            height="50px"
-          />
-        </button>
-        <p>
-          What does justify-content CSS property do and what values can it have?
-        </p>
-        <button class="card__button" data-js="spoiler-button-5">
-          Show Answer
-        </button>
-        <article>
-          <p class="--hidden" data-js="answer-5">
-            The CSS property <b>justify-content</b> defines how the flex items
-            within a flex container will be justified. <br />
-            The justification is always done on the main axis. So for the
-            horizontal orientation of a flex container the
-            <b>flex-start</b> will justify items to left, <b>flex-end</b> will
-            justify items to right.
-            <br />
-            <b>flex-start </b> - justifies the content to left for horizontal
-            orientation or to top for vertical orientation <br />
-            <b>flex-end</b> - justifies the content to right for horizontal
-            orientation or to bottom for vertical orientation <br />
-            <b>center</b> - justifies the content to center <br />
-            <b>space-between</b> - when there are multiple flex items in a flex
-            container, they will be justified evenly, however, the first and
-            last item won't have space on their outer edges <br />
-            <b>space-around</b> - when there are multiple flex items in a flex
-            container, they will be justified evenly.
-          </p>
-        </article>
-        <article class="tags">
-          <p class="tags__item">#css</p>
-          <p class="tags__item">#flexbox</p>
-        </article>
-      </section>
-    </main>
-  </section>
-  
-  
-  <section data-js="page-form" class="page" id="form">
-    <main>
-    <section>
-    <form action="" class="form" data-js="form">
-        <section>
-        <label for="your-question">
-           <h2>Your question : </h2>
-        </label>
-        <textarea name="yourQuestion" id="your-question" cols="24" rows="3" data-js="questionElement" maxlength="150">
-        </textarea>   
-        <p>
-          <small class="character-count" >(<span data-js="questionAmountLeft" ></span> characters left) </small>
-        </p>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
         </section>
-        <section>
-        <label for="your-answer">
-            <h2>Your answer : </h2>
-        </label>
-        <textarea name="yourAnswer" id="your-answer" cols="24" rows="3" data-js="answerElement" maxlength="150">
-        </textarea> 
-        <p>
-          <small class="character-count" >(<span data-js="answerAmountLeft" ></span> characters left) </small>
-        </p>
-      </section>
-        <section>
-        <label for="tag">
-            <h2>Tag : </h2>
-        </label>
-        <textarea name="yourTag" id="tag" cols="24" rows="3" data-js="tagElement" maxlength="30">
-        </textarea>
-        <p>
-          <small class="character-count" >(<span data-js="tagAmountLeft" ></span> characters left) </small>
-        </p>
+        <section class="card">
+          <button class="card__bookmark" data-js="bookmark-button">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-white.svg"
+              alt="a white bookmark"
+            />
+          </button>
+          <p class="card__text">
+            What is a flex container and what is its job?
+          </p>
+          <button class="card__button" data-js="spoiler-button">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer">
+              A flex container is an element that contains child elemens that
+              are positioned depending on the flex container settings. Every
+              HTML element can be converted to a flex container. The child
+              elements of such HTML element then become flex items. The flex
+              container defines how the flex items contained inside the flex
+              container will be positioned and sized.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
         </section>
-        <button class="form__button" type="submit" data-js="add-card-button" >Add card</button> 
-    </form>
+        <section class="card">
+          <button class="card__bookmark" data-js="bookmark-button">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-white.svg"
+              alt="a white bookmark"
+            />
+          </button>
+          <p class="card__text">What is a flex item and what is its job?</p>
+          <button class="card__button" data-js="spoiler-button">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer">
+              A flex item is a child element of a flex container. Any HTML
+              element can be converted to a flex item just by making its parent
+              element a flex container. A flex item can be positioned and sized
+              using flex container settings.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card">
+          <button class="card__bookmark" data-js="bookmark-button">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-white.svg"
+              alt="a white bookmark"
+            />
+          </button>
+          <p class="card__text">
+            How do you turn a html element into a flex container?
+          </p>
+          <button class="card__button" data-js="spoiler-button">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer">
+              To turn a HTML element into a flex container, you need to set a
+              CSS display property to flex
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card">
+          <button class="card__bookmark" data-js="bookmark-button">
+            <img src="Assets/bookmark-white.svg" alt="a white bookmark" />
+          </button>
+          <p class="card__text">
+            What does justify-content CSS property do and what values can it
+            have?
+          </p>
+          <button class="card__button" data-js="spoiler-button">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer">
+              The CSS property <b>justify-content</b> defines how the flex items
+              within a flex container will be justified. <br />
+              The justification is always done on the main axis. So for the
+              horizontal orientation of a flex container the
+              <b>flex-start</b> will justify items to left, <b>flex-end</b> will
+              justify items to right. <br />
+              <b>flex-start </b> - justifies the content to left for horizontal
+              orientation or to top for vertical orientation <br />
+              <b>flex-end</b> - justifies the content to right for horizontal
+              orientation or to bottom for vertical orientation <br />
+              <b>center</b> - justifies the content to center <br />
+              <b>space-between</b> - when there are multiple flex items in a
+              flex container, they will be justified evenly, however, the first
+              and last item won't have space on their outer edges <br />
+              <b>space-around</b> - when there are multiple flex items in a flex
+              container, they will be justified evenly.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+      </main>
     </section>
-  </main>
+
+    <section data-js="page-bookmarks" class="page" id="bookmarks">
+      <main>
+        <section
+          class="card--no-bookmarks --not-hidden"
+          data-js="card--no-bookmarks"
+        >
+          <h2>Ooops...</h2>
+          <p>
+            <img
+              class="img--no-bookmarks"
+              src="./Assets/sad-smiley.png"
+              alt="a sad smiley"
+            />
+            You don´t have any bookmarks yet...
+          </p>
+        </section>
+        <section class="card --hidden">
+          <button class="card__bookmark" data-js="bookmark-button-1">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-black.svg"
+              alt="a black bookmark"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <p class="card__text">What is Flexbox?</p>
+          <button class="card__button" data-js="spoiler-button-1">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer-1">
+              Flexbox is a web layout mode in CSS3. It allows web designers
+              design complex, flexible web layouts that were very difficult to
+              design using CSS before Flexbox was invented.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card --hidden">
+          <button class="card__bookmark" data-js="bookmark-button-2">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-black.svg"
+              alt="a black bookmark"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <p>What is a flex container and what is its job?</p>
+          <button class="card__button" data-js="spoiler-button-2">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer-2">
+              A flex container is an element that contains child elemens that
+              are positioned depending on the flex container settings. Every
+              HTML element can be converted to a flex container. The child
+              elements of such HTML element then become flex items. The flex
+              container defines how the flex items contained inside the flex
+              container will be positioned and sized.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card --hidden">
+          <button class="card__bookmark" data-js="bookmark-button-3">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-black.svg"
+              alt="a black bookmark"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <p>What is a flex item and what is its job?</p>
+          <button class="card__button" data-js="spoiler-button-3">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer-3">
+              A flex item is a child element of a flex container. Any HTML
+              element can be converted to a flex item just by making its parent
+              element a flex container. A flex item can be positioned and sized
+              using flex container settings.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card --hidden">
+          <button class="card__bookmark" data-js="bookmark-button-4">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-black.svg"
+              alt="a black bookmark"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <p>How do you turn a html element into a flex container?</p>
+          <button class="card__button" data-js="spoiler-button-4">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer-4">
+              To turn a HTML element into a flex container, you need to set a
+              CSS display property to flex
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+        <section class="card --hidden">
+          <button class="card__bookmark" data-js="bookmark-button-5">
+            <img
+              class="card__bookmark"
+              src="Assets/bookmark-black.svg"
+              alt="a black bookmark"
+              width="50px"
+              height="50px"
+            />
+          </button>
+          <p>
+            What does justify-content CSS property do and what values can it
+            have?
+          </p>
+          <button class="card__button" data-js="spoiler-button-5">
+            Show Answer
+          </button>
+          <article>
+            <p class="--hidden" data-js="answer-5">
+              The CSS property <b>justify-content</b> defines how the flex items
+              within a flex container will be justified. <br />
+              The justification is always done on the main axis. So for the
+              horizontal orientation of a flex container the
+              <b>flex-start</b> will justify items to left, <b>flex-end</b> will
+              justify items to right.
+              <br />
+              <b>flex-start </b> - justifies the content to left for horizontal
+              orientation or to top for vertical orientation <br />
+              <b>flex-end</b> - justifies the content to right for horizontal
+              orientation or to bottom for vertical orientation <br />
+              <b>center</b> - justifies the content to center <br />
+              <b>space-between</b> - when there are multiple flex items in a
+              flex container, they will be justified evenly, however, the first
+              and last item won't have space on their outer edges <br />
+              <b>space-around</b> - when there are multiple flex items in a flex
+              container, they will be justified evenly.
+            </p>
+          </article>
+          <article class="tags">
+            <p class="tags__item">#css</p>
+            <p class="tags__item">#flexbox</p>
+          </article>
+        </section>
+      </main>
     </section>
-    
-    
+
+    <section data-js="page-form" class="page" id="form">
+      <main>
+        <section>
+          <form action="" class="form" data-js="form">
+            <section>
+              <label for="your-question">
+                <h2>Your question :</h2>
+              </label>
+              <textarea
+                name="yourQuestion"
+                id="your-question"
+                cols="24"
+                rows="3"
+                data-js="questionElement"
+                maxlength="150"
+              >
+              </textarea>
+              <p>
+                <small class="character-count"
+                  >(<span data-js="questionAmountLeft"></span> characters left)
+                </small>
+              </p>
+            </section>
+            <section>
+              <label for="your-answer">
+                <h2>Your answer :</h2>
+              </label>
+              <textarea
+                name="yourAnswer"
+                id="your-answer"
+                cols="24"
+                rows="3"
+                data-js="answerElement"
+                maxlength="150"
+              >
+              </textarea>
+              <p>
+                <small class="character-count"
+                  >(<span data-js="answerAmountLeft"></span> characters left)
+                </small>
+              </p>
+            </section>
+            <section>
+              <label for="tag">
+                <h2>Tag :</h2>
+              </label>
+              <textarea
+                name="yourTag"
+                id="tag"
+                cols="24"
+                rows="3"
+                data-js="tagElement"
+                maxlength="30"
+              >
+              </textarea>
+              <p>
+                <small class="character-count"
+                  >(<span data-js="tagAmountLeft"></span> characters left)
+                </small>
+              </p>
+            </section>
+            <button
+              class="form__button"
+              type="submit"
+              data-js="add-card-button"
+            >
+              Add card
+            </button>
+          </form>
+        </section>
+      </main>
+    </section>
+
     <section data-js="page-profile" class="page" id="profile">
       <main class="profile__main">
         <section class="visit-card">
           <img
-            src="Assets/user_profile_icon_176439.svg"
+            data-js="profileImage"
+            src="Assets/profile-white.svg"
             alt="Profile picture"
             width="70"
             height="70"
@@ -366,13 +414,14 @@
           <p class="about-me__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
             repellendus tempora blanditiis numquam libero odit earum! Saepe ex
-            excepturi ullam, eum dicta molestias odio ipsa, neque hic, sequi illo
-            impedit?
+            excepturi ullam, eum dicta molestias odio ipsa, neque hic, sequi
+            illo impedit?
           </p>
         </section>
         <section class="counters">
           <div class="counters__tag">
             <img
+              data-js="questionSign"
               src="Assets/question-sign.svg"
               alt="a sign of a question"
               width="50px"
@@ -382,6 +431,7 @@
           </div>
           <div class="counters__tag">
             <img
+              data-js="bookmarksCounterIcon"
               src="Assets/bookmark-black.svg"
               alt="a black bookmark sign"
               width="50px"
@@ -398,50 +448,56 @@
             <span class="slider round"></span>
           </label>
         </section>
-      </main> 
+      </main>
     </section>
-    
-    
-    <footer>
-      <nav class=>
-        <ul class="nav__ul" role="list">
-          <li>
-            <a href="#index" data-js="link-index" 
-              >Home</a><!-- <img
-                src="Assets/homepage-black.svg"
+
+    <footer class="footer">
+      <nav class="nav">
+        <ul data-js="navUl" class="nav__ul" role="list">
+          <li class="nav__li">
+            <a href="#index" data-js="link-index"
+              ><img
+                data-js="homepageIcon"
+                src="Assets/homepage-white.svg"
                 alt="a black sign of a little home"
                 width="50"
                 height="50"
-            /> -->
+            /></a>
           </li>
           <li>
             <a href="#bookmarks" data-js="link-bookmarks" class="#bookmarks"
-              >Bookmarks</a><!-- <img
+              ><img
+                data-js="bookmarkIcon"
                 src="Assets/bookmark-white.svg"
                 alt="a white bookmark"
                 width="40"
                 height="40"
-            /></a>  -->
+            /></a>
+          </li>
           <li>
-            <a href="#form" data-js="link-form">Create
-              <!-- <img src="Assets/plus-white.svg" 
-              alt="a plus sign"
-              width="40"
-              height="40"
-              /> -->
+            <a href="#form" data-js="link-form">
+              <img
+                data-js="formIcon"
+                src="Assets/plus-white.svg"
+                alt="a plus sign"
+                width="40"
+                height="40"
+              />
             </a>
           </li>
           <li>
             <a href="#profile" data-js="link-profile"
-              >Profile</a><!-- <img
-                src="Assets/user_profile_icon_176439.svg"
+              ><img
+                data-js="profileIcon"
+                src="Assets/profile-white.svg"
                 alt="a profile sign"
                 width="50"
                 height="50"
-            /> -->
+              />
+            </a>
           </li>
         </ul>
       </nav>
     </footer>
-  </body> 
+  </body>
 </html>
