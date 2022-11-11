@@ -1,4 +1,9 @@
-@import "card.css";
-@import "profile-page.css";
-@import "global.css";
-@import "form.css";
+@import "../Components/Header/Header.css";
+@import "../Components/Footer/Footer.css";
+@import "../Components/Cards/Cards.css";
+@import "../Components/Darkmode/Darkmode.css";
+@import "../Components/Main/HomePage/Homepage.css";
+@import "../Components/Main/BookmarksPage/Bookmarks.css";
+@import "../Components/Main/FormPage/Form.css";
+@import "../Components/Main/ProfilePage/Profile.css";
+@import "./global.css";

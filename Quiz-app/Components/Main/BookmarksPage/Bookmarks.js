@@ -9,11 +9,11 @@ const cardBookmarkPage2 = document.querySelector(
 );
 
 /* bookmarkButton1.addEventListener("click", () => {
-    cardNoBookmarks.classList.add("--hidden");
-    cardBookmarkPage1.classList.toggle("--hidden");
-  });
-
-  bookmarkButton2.addEventListener("click", () => {
-    cardNoBookmarks.classList.add("--hidden");
-    cardBookmarkPage2.classList.toggle("--hidden");
-  });*/
+      cardNoBookmarks.classList.add("--hidden");
+      cardBookmarkPage1.classList.toggle("--hidden");
+    });
+  
+    bookmarkButton2.addEventListener("click", () => {
+      cardNoBookmarks.classList.add("--hidden");
+      cardBookmarkPage2.classList.toggle("--hidden");
+    });*/
