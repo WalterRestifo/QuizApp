@@ -3,10 +3,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 90vh;
-  min-width: 100vw;
-  height: auto;
-  width: auto;
+  height: 90vh;
+  width: 100vw;
 }
 
 textarea {

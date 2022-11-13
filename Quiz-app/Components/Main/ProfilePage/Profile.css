@@ -27,17 +27,21 @@
 }
 
 .settings {
-  display: flex;
+  position: relative;
   margin-top: 20px;
-  justify-content: space-between;
   height: 100px;
   width: 500px;
-  flex-direction: column;
 }
 
 .settings__title {
-  align-self: flex-start;
-  justify-self: flex-start;
+  position: relative;
+  left: 5%;
+}
+
+.settings__darkmode {
+  position: relative;
+  left: 5%;
+  top: 15%;
 }
 
 /* The switch - the box around the slider */
@@ -46,6 +50,8 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  left: 5%;
+  top: 25%;
 }
 
 /* Hide default HTML checkbox */

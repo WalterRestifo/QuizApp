@@ -17,6 +17,12 @@ bookmarkButtons.forEach((bookmarkButton) => {
       "Assets/bookmark-white.svg",
       "Assets/bookmark-black.svg"
     );
+    switchAttributeValue(
+      e.target,
+      "alt",
+      "a white bookmark",
+      "a black bookmark"
+    );
   });
 });
 

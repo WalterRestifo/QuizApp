@@ -1,7 +1,8 @@
-const form = document.querySelector('[data-js="form"]');
+const form = document.querySelector('[data-js="page-form"]');
+const homepage = document.querySelector('[data-js="page-home"]');
 
 import { updateAmountLeft } from "../../../Lib/UpdateAmountLeft.js";
-import { addCard } from "../../../Lib/AddCard.js";
+import { createCard } from "../../../Lib/createCard.js";
 import { textAreaDatas } from "../../../Data/Data.js";
 
 form.addEventListener("submit", (e) => {
@@ -11,7 +12,9 @@ form.addEventListener("submit", (e) => {
   const yourAnswer = e.target.yourAnswer.value;
   const yourTag = e.target.yourTag.value;
 
-  addCard(yourQuestion, yourAnswer, yourTag);
+  const newCard = createCard(yourQuestion, yourAnswer, yourTag);
+  homepage.prepend(newCard);
+  console.log(newCard);
 });
 
 textAreaDatas.forEach((textAreaData) => {

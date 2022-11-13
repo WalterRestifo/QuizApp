@@ -25,21 +25,13 @@ b {
 body {
   background-color: white;
 }
-
-main {
-  min-height: 90vh;
-  min-width: 100vw;
-  height: auto;
-  width: auto;
-}
-
 .--hidden {
   opacity: 0;
 }
 
 main {
   /* margin: 20px;  for .profile__main*/
-  min-height: 90vh;
+  min-height: 100vh;
   min-width: 100vw;
   height: auto;
   width: auto;
@@ -54,4 +46,8 @@ p {
 
 .page.current {
   display: block;
+  min-height: 90vh;
+  min-width: 100vw;
+  height: auto;
+  width: auto;
 }
