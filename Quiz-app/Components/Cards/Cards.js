@@ -6,7 +6,9 @@ const bookmarkButtons = document.querySelectorAll(
   '[data-js = "bookmark-button"]'
 );
 
-const bookmarkCards = document.querySelectorAll('[data-js="bookmarkPageCard"]');
+export const bookmarkCards = document.querySelectorAll(
+  '[data-js="bookmarkPageCard"]'
+);
 
 import { switchAttributeValue } from "../../Lib/SwitchAttributeValue.js";
 import { switchTextContent } from "../../Lib/SwitchTextContent.js";
