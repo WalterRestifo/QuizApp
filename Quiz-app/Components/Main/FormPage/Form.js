@@ -1,5 +1,6 @@
 const form = document.querySelector('[data-js="page-form"]');
 const homepage = document.querySelector('[data-js="page-home"]');
+const bookmarkPage = document.querySelector('[data-js="page-bookmarks"]');
 
 import { updateAmountLeft } from "../../../Lib/UpdateAmountLeft.js";
 import { createCard } from "../../../Lib/createCard.js";
@@ -14,7 +15,14 @@ form.addEventListener("submit", (e) => {
 
   const newCard = createCard(yourQuestion, yourAnswer, yourTag);
   homepage.prepend(newCard);
-  console.log(newCard);
+
+  const newCardBookmarkPage = createCard(yourQuestion, yourAnswer, yourTag);
+  newCardBookmarkPage.classList.add("--hidden");
+  bookmarkPage.prepend(newCardBookmarkPage);
+
+  e.target.yourQuestion.value = "";
+  e.target.yourAnswer.value = "";
+  e.target.yourTag.value = "";
 });
 
 textAreaDatas.forEach((textAreaData) => {

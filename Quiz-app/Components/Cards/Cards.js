@@ -6,10 +6,12 @@ const bookmarkButtons = document.querySelectorAll(
   '[data-js = "bookmark-button"]'
 );
 
+const bookmarkCards = document.querySelectorAll('[data-js="bookmarkPageCard"]');
+
 import { switchAttributeValue } from "../../Lib/SwitchAttributeValue.js";
 import { switchTextContent } from "../../Lib/SwitchTextContent.js";
 
-bookmarkButtons.forEach((bookmarkButton) => {
+bookmarkButtons.forEach((bookmarkButton, index) => {
   bookmarkButton.addEventListener("click", (e) => {
     switchAttributeValue(
       e.target,
@@ -23,6 +25,7 @@ bookmarkButtons.forEach((bookmarkButton) => {
       "a white bookmark",
       "a black bookmark"
     );
+    bookmarkCards[index].classList.toggle("--hidden");
   });
 });
 
