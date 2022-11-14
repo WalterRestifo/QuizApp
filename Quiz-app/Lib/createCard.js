@@ -1,3 +1,6 @@
+import { switchTextContent } from "./SwitchTextContent.js";
+import { toggleBookmarkIcon } from "./toggleBookmarkIcon.js";
+
 export function createCard(yourQuestion, yourAnswer, yourTag) {
   const section = document.createElement("section");
   section.classList.add("card");
@@ -5,6 +8,9 @@ export function createCard(yourQuestion, yourAnswer, yourTag) {
   const bookmarkButton = document.createElement("button");
   bookmarkButton.classList.add("card__bookmark");
   bookmarkButton.setAttribute("data-js", "bookmark-button");
+  bookmarkButton.addEventListener("click", (e) => {
+    toggleBookmarkIcon(e.target);
+  });
   section.append(bookmarkButton);
 
   const bookmarkImg = document.createElement("img");
@@ -22,6 +28,7 @@ export function createCard(yourQuestion, yourAnswer, yourTag) {
   showAnswerButton.textContent = "Show Answer";
   showAnswerButton.classList.add("card__button");
   showAnswerButton.setAttribute("data-js", "spoiler-button");
+
   section.append(showAnswerButton);
 
   const answer = document.createElement("p");
@@ -29,6 +36,10 @@ export function createCard(yourQuestion, yourAnswer, yourTag) {
   answer.classList.add("--hidden");
   answer.setAttribute("data-js", "answer");
   section.append(answer);
+  showAnswerButton.addEventListener("click", (e) => {
+    switchTextContent(e.target, "Show Answer", "Hide Answer");
+    answer.classList.toggle("--hidden");
+  });
 
   const tagWrapper = document.createElement("article");
   tagWrapper.classList.add("tags");
